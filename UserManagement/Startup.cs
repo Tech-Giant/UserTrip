@@ -12,7 +12,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TripManagement.DAL.Models;
+using TripManagement.Services;
 using TripManagement.SharedInfra.IRepository;
+using TripManagement.SharedInfra.IServices;
 using TripManagement.SharedInfra.Repository;
 
 namespace TripManagement
@@ -30,9 +32,11 @@ namespace TripManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<utdContext>(item => item.UseSqlServer(Configuration.GetConnectionString("")));
+            services.AddDbContext<utdContext>(item => item.UseSqlServer(Configuration.GetConnectionString("TripDbConnection")));
             services.AddScoped<IExpenseInfoRepository, ExpenseInfoRepository>();
             services.AddScoped<ITripDetailsRepository, TripDetailsRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
