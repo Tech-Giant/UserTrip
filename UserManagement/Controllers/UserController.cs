@@ -23,7 +23,7 @@ namespace TripManagement.Controllers
 
         [HttpGet]
         [Route("GetAll")]
-        public async Task<IActionResult> Getusers()
+        public async Task<IActionResult> GetUsers()
         {
             var serviceResponse = await _userService.GetUsers();
             return this.GetResponse(serviceResponse);
