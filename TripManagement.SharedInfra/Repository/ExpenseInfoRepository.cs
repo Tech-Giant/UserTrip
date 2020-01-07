@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TripManagement.Models;
+using TripManagement.DAL.Models;
+using TripManagement.SharedInfra.IRepository;
 using TripManagement.ViewEntities;
 
-namespace TripManagement.Repository
+namespace TripManagement.SharedInfra.Repository
 {
     public class ExpenseInfoRepository : IExpenseInfoRepository
     {

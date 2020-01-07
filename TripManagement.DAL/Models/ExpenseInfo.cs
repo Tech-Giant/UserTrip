@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace TripManagement.Models
+namespace TripManagement.DAL.Models
 {
     public partial class ExpenseInfo
     {

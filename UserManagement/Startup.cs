@@ -11,8 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using TripManagement.Models;
-using TripManagement.Repository;
+using TripManagement.DAL.Models;
+using TripManagement.SharedInfra.IRepository;
+using TripManagement.SharedInfra.Repository;
 
 namespace TripManagement
 {

@@ -1,8 +1,6 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace TripManagement.Models
+namespace TripManagement.DAL.Models
 {
     public partial class utdContext : DbContext
     {

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace TripManagement.Models
+namespace TripManagement.DAL.Models
 {
-    public partial class TripDetails
+    public partial class UserTripMapping
     {
+        public Guid UserTripId { get; set; }
+        public Guid UserId { get; set; }
         public Guid TripId { get; set; }
-        public string TripName { get; set; }
-        public string TripDetails1 { get; set; }
         public Guid? CreatedBy { get; set; }
         public DateTime? CreatedDate { get; set; }
         public Guid? ModifiedBy { get; set; }

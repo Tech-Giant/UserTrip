@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using TripManagement.Models;
+using TripManagement.DAL.Models;
+using TripManagement.SharedInfra.IRepository;
 
-namespace TripManagement.Repository
+namespace TripManagement.SharedInfra.Repository
 {
     public class TripDetailsRepository : ITripDetailsRepository
     {
