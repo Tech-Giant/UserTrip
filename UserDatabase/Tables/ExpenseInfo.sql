@@ -6,5 +6,7 @@
 	[CurrencyCode] tinyint,
 	[DebitCreditIndicator] tinyint,
 	[CreatedBy] UNIQUEIDENTIFIER,
-	[CreatedDate] datetime
+	[CreatedDate] datetime,
+	[ModifiedBy] UNIQUEIDENTIFIER,
+	[ModifiedDate] datetime
 )

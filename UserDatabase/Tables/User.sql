@@ -7,5 +7,7 @@
 	[Address] varchar(200) NUll,
 	[UserProof] nvarchar(max) NULL,
 	[CreatedBy] UNIQUEIDENTIFIER,
-	[CreatedDate] datetime
+	[CreatedDate] datetime,
+	[ModifiedBy] UNIQUEIDENTIFIER,
+	[ModifiedDate] datetime
 )

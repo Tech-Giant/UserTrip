@@ -5,5 +5,7 @@
 	[ExpenseInfoId] UNIQUEIDENTIFIER NOT NULL,
 	[Note] nvarchar(max),
 	[CreatedBy] UNIQUEIDENTIFIER,
-	[CreatedDate] datetime
+	[CreatedDate] datetime,
+	[ModifiedBy] UNIQUEIDENTIFIER,
+	[ModifiedDate] datetime
 )

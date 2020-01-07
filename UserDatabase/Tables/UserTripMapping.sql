@@ -4,5 +4,7 @@
 	[UserId] UNIQUEIDENTIFIER NOT NULL,
 	[TripId] UNIQUEIDENTIFIER NOT NULL,
 	[CreatedBy] UNIQUEIDENTIFIER,
-	[CreatedDate] datetime
+	[CreatedDate] datetime,
+	[ModifiedBy] UNIQUEIDENTIFIER,
+	[ModifiedDate] datetime
 )
